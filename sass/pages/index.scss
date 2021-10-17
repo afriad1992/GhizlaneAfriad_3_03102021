@@ -1,0 +1,107 @@
+@import "../layaout/variable.scss";
+    h1{
+        font-weight:bolder;
+        font-size:medium;
+    }
+header{ 
+    img{
+        display:block;
+        margin: auto;
+        width: 40%;
+        };
+    
+    div{
+        width: 100%;
+        height: 30px;
+        background-color: rgb(238, 232, 232); 
+        display: flex;
+        justify-content:center;
+        margin-top: 15px;
+        i{
+            width: 8%;
+            padding: 0%;
+            margin: 0%;
+            padding-top: 2%;
+        };
+        p{
+            padding: 0%;
+            margin: 0%;
+            width: 40%;
+            padding-top: 1%;
+        }
+
+    }
+}
+ #choix{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        p{font-size: small;
+        }
+        background-color:rgba(255, 251, 251, 0.856); 
+        text-align: center;
+        
+
+}
+
+#Fonctionnement{
+    
+    ol{
+        list-style: none; 
+        counter-reset: li;
+    };
+    li{
+        margin:auto 0px;
+        border-radius: 16px;
+        margin-bottom: 15px;
+        font-size: small;
+        align-items: center;
+        height: 40px;
+        padding-top: 3%;
+        background-color:rgb(218, 210, 210);     
+        i{
+            margin-right: 15px;
+        };
+    }
+    li::before {
+        counter-increment: li;
+        content: counter(li); 
+        background-color:$Primaire;
+        border-radius: 50%;
+        padding: 3px;
+        margin-right: 20px;
+        display: inline-block; width: 1em;
+        margin-left: -1em;
+    };
+} 
+#restaurant{
+    background-color:rgba(255, 251, 251, 0.603) ;
+}
+article{
+    margin-left: 15px;
+    border-radius: 15px;
+    a{
+        text-decoration: none;
+    };
+    img{
+        width: 100%;
+        height: 120px;
+    }
+    h2{
+        font-size: small;
+        color: black;
+        line-height:0 ;
+        i{
+        padding-left:100px;
+    
+        }
+        i:hover{color:linear-gradient($Primaire,$secondaire);
+        }     
+    }
+    p{
+        color: gray;
+        font-size: smaller;
+        line-height:0 ;
+    };
+}   
+
+
