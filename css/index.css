@@ -1,23 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swaphttps://fonts.googleapis.com/css2? family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
-  /* color: white;
-  color: white; */
-  margin: 5% 6% 6% 3%;
+  color: black;
 }
 
 button {
   border-radius: 50px;
-  background: linear-gradient(#9356DC, #FF79DA);
-  height: 45px;
+  background: linear-gradient(#FF79DA, #9356DC);
   font-weight: bold;
+  margin-left: auto;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  padding-left: 6%;
+  padding-right: 6%;
+  display: block;
+  color: white;
+  font-size: 0.6em;
+  height: 30px;
+  border: none;
+  box-shadow: 0px 3px 8px 3px gainsboro;
+  margin-right: auto;
 }
 
 footer {
+  position: relative;
+  z-index: 2;
   background-color: black;
   color: white;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 30px;
 }
 footer div {
@@ -25,7 +38,7 @@ footer div {
 }
 footer > p {
   font-family: "Shrikhand", cursive;
-  color: white;
+  padding-left: 30px;
 }
 footer i {
   padding-right: 15px;
@@ -34,12 +47,16 @@ footer i {
 h1 {
   font-weight: bolder;
   font-size: medium;
+  margin-left: 15px;
+  margin-bottom: 12px;
 }
 
 header img {
   display: block;
   margin: auto;
   width: 40%;
+  margin-bottom: 10px;
+  border-radius: 15px;
 }
 header div {
   width: 100%;
@@ -47,19 +64,11 @@ header div {
   background-color: #eee8e8;
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  align-items: center;
+  box-shadow: 0px 0px 20px 0px gainsboro;
 }
 header div i {
-  width: 8%;
-  padding: 0%;
-  margin: 0%;
-  padding-top: 2%;
-}
-header div p {
-  padding: 0%;
-  margin: 0%;
-  width: 40%;
-  padding-top: 1%;
+  padding-right: 7px;
 }
 
 #choix {
@@ -68,22 +77,33 @@ header div p {
   background-color: rgba(255, 251, 251, 0.856);
   text-align: center;
 }
+#choix button {
+  color: white;
+  font-size: 0.6em;
+  padding: 0% 5%;
+  height: 35px;
+  border: none;
+  box-shadow: 0px 3px 8px 3px gainsboro;
+  margin: auto;
+}
 #choix p {
   font-size: small;
+  color: #4d4d4d;
 }
 
 #Fonctionnement ol {
   list-style: none;
   counter-reset: li;
+  padding: 2% 7%;
 }
 #Fonctionnement li {
-  margin: auto 0px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 8px 3px gainsboro;
   border-radius: 16px;
   margin-bottom: 15px;
-  font-size: small;
-  align-items: center;
-  height: 40px;
-  padding-top: 3%;
+  font-size: 0.7em;
+  height: 45px;
   background-color: #dad2d2;
 }
 #Fonctionnement li i {
@@ -102,35 +122,61 @@ header div p {
 }
 
 #restaurant {
-  background-color: rgba(255, 251, 251, 0.603);
+  background-color: #eee8e8;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 article {
-  margin-left: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 15px;
+  border: 1px solid rgba(255, 251, 251, 0.603);
+  margin-bottom: 15px;
+  background-color: white;
 }
 article a {
   text-decoration: none;
+  border-radius: 15px;
 }
 article img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   width: 100%;
-  height: 120px;
+  height: 30vw;
 }
 article h2 {
   font-size: small;
   color: black;
-  line-height: 0;
+  line-height: 0.5em;
+  position: relative;
+  padding-left: 20px;
 }
 article h2 i {
   padding-left: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 10px;
 }
-article h2 i:hover {
-  color: linear-gradient(#9356DC, #FF79DA);
+article h2 .far {
+  color: black;
+}
+article h2 .fas {
+  opacity: 0;
+  color: #FF79DA;
+}
+article h2 .far:hover {
+  opacity: 0;
+}
+article h2 .fas:hover {
+  opacity: 1;
 }
 article p {
   color: gray;
   font-size: smaller;
   line-height: 0;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
