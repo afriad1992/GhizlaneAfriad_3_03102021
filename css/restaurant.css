@@ -102,13 +102,13 @@ header > img {
   font-size: small;
   background-color: white;
   border-radius: 22px;
-  padding: 1% 4%;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   height: 60px;
 }
 #menuR__entrée article > div:first-child, #menuR__Plats article > div:first-child, #menuR__Desserts article > div:first-child {
+  padding: 2% 4%;
   width: 100%;
 }
 #menuR__entrée article > div:first-child:hover > div > p, #menuR__Plats article > div:first-child:hover > div > p, #menuR__Desserts article > div:first-child:hover > div > p {
@@ -140,7 +140,7 @@ header > img {
   font-weight: bold;
   padding-bottom: 0;
   margin-bottom: 0;
-  margin-top: 8px;
+  margin-top: 0px;
   font-size: 1em;
 }
 #menuR__entrée article > div:first-child div, #menuR__Plats article > div:first-child div, #menuR__Desserts article > div:first-child div {
@@ -259,6 +259,208 @@ header > img {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  #menuR {
+    position: relative;
+    padding: 1% 7%;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    margin-bottom: 32px;
+    margin-top: -17vw;
+    z-index: 1;
+  }
+  #menuR h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: large;
+    position: relative;
+  }
+  #menuR h1 i {
+    position: absolute;
+    right: 0;
+  }
+  #menuR__entrée, #menuR__Plats, #menuR__Desserts {
+    display: inline-block;
+    width: 30%;
+    margin-left: 2%;
+    height: 400px;
+    vertical-align: top;
+  }
+  #menuR__entrée h2, #menuR__Plats h2, #menuR__Desserts h2 {
+    font-weight: lighter;
+    color: #5c5c5c;
+    font-size: medium;
+  }
+  #menuR__entrée h2 span, #menuR__Plats h2 span, #menuR__Desserts h2 span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #99e2d0;
+  }
+  #menuR__entrée article, #menuR__Plats article, #menuR__Desserts article {
+    font-size: small;
+    background-color: white;
+    border-radius: 22px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+  }
+  #menuR__entrée article > div:first-child, #menuR__Plats article > div:first-child, #menuR__Desserts article > div:first-child {
+    width: 100%;
+    padding: 2% 5%;
+  }
+  #menuR__entrée article > div:first-child:hover > div > p, #menuR__Plats article > div:first-child:hover > div > p, #menuR__Desserts article > div:first-child:hover > div > p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 150px;
+  }
+  #menuR__entrée article > div:first-child:hover + div, #menuR__Plats article > div:first-child:hover + div, #menuR__Desserts article > div:first-child:hover + div {
+    animation-name: trans;
+    animation-duration: 1500ms;
+    height: 100%;
+    animation-fill-mode: both;
+    opacity: 1;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+  }
+  #menuR__entrée article > div:first-child:hover + div i, #menuR__Plats article > div:first-child:hover + div i, #menuR__Desserts article > div:first-child:hover + div i {
+    margin: auto;
+    color: white;
+    font-size: 2em;
+    opacity: 1;
+    animation-name: rot;
+    animation-duration: 1600ms;
+    animation-fill-mode: both;
+    width: 15%;
+  }
+  #menuR__entrée article > div:first-child h3, #menuR__Plats article > div:first-child h3, #menuR__Desserts article > div:first-child h3 {
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0px;
+    font-size: 1em;
+  }
+  #menuR__entrée article > div:first-child div, #menuR__Plats article > div:first-child div, #menuR__Desserts article > div:first-child div {
+    padding-top: 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8em;
+  }
+  #menuR__entrée article > div:first-child div span, #menuR__Plats article > div:first-child div span, #menuR__Desserts article > div:first-child div span {
+    text-align: center;
+    font-weight: bolder;
+    vertical-align: sub;
+  }
+  #menuR__entrée article > div:last-child, #menuR__Plats article > div:last-child, #menuR__Desserts article > div:last-child {
+    opacity: 0;
+    height: 100%;
+    width: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+  }
+  #menuR__entrée article > div:last-child i, #menuR__Plats article > div:last-child i, #menuR__Desserts article > div:last-child i {
+    opacity: 0;
+  }
+
+  .soulignement {
+    width: 40px;
+    height: 3px;
+    background-color: #99E2D0;
+    margin: 5px 0px;
+  }
+
+  @keyframes trans {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 30%;
+    }
+  }
+  @keyframes rot {
+    from {
+      transform: rotateZ(0);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+  .plat1 {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 200ms;
+  }
+
+  .plat2 {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 400ms;
+  }
+
+  .plat3 {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 600ms;
+  }
+
+  .plat4 {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 800ms;
+  }
+
+  .plat5 {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 1000ms;
+  }
+
+  .plat6 {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 1200ms;
+  }
+
+  .plat7 {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 1400ms;
+  }
+
+  .plat8 {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 1600ms;
+  }
+
+  .plat9 {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 1800ms;
+  }
+
+  .plat10 {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 2000ms;
+  }
+
+  @keyframes menu {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 }
 
