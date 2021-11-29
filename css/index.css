@@ -51,23 +51,27 @@ h1 {
   margin-bottom: 12px;
 }
 
-header img {
+.entete__image {
+  height: auto;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+.entete__image img {
   display: block;
   margin: auto;
   width: 40%;
-  margin-bottom: 10px;
-  border-radius: 15px;
-}
-header div {
-  width: 100%;
+  padding: 7px;
   height: 30px;
-  background-color: #eee8e8;
+}
+.entete__localisation {
+  width: 100%;
+  height: 35px;
+  background-color: #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 20px 0px gainsboro;
 }
-header div i {
+.entete__localisation i {
   padding-right: 7px;
 }
 
@@ -77,7 +81,7 @@ header div i {
   background-color: rgba(255, 251, 251, 0.856);
   text-align: center;
 }
-#choix button {
+#choix__button {
   color: white;
   font-size: 0.6em;
   padding: 0% 5%;
@@ -86,7 +90,7 @@ header div i {
   box-shadow: 0px 3px 8px 3px gainsboro;
   margin: auto;
 }
-#choix p {
+#choix__p {
   font-size: small;
   color: #4d4d4d;
 }
@@ -104,15 +108,23 @@ header div i {
   margin-bottom: 15px;
   font-size: 0.7em;
   height: 45px;
-  background-color: #dad2d2;
+  background-color: #eaeaea;
 }
 #Fonctionnement li i {
   margin-right: 15px;
+}
+#Fonctionnement li:hover {
+  background-color: #f5edff;
+}
+#Fonctionnement li:hover i {
+  color: #9356DC;
 }
 #Fonctionnement li::before {
   counter-increment: li;
   content: counter(li);
   background-color: #9356DC;
+  color: white;
+  text-align: center;
   border-radius: 50%;
   padding: 3px;
   margin-right: 20px;
@@ -122,7 +134,7 @@ header div i {
 }
 
 #restaurant {
-  background-color: #eee8e8;
+  background-color: #eaeaea;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -139,11 +151,26 @@ article a {
   text-decoration: none;
   border-radius: 15px;
 }
-article img {
+article .imageRestaurant {
+  position: relative;
+}
+article .imageRestaurant img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
   height: 30vw;
+}
+article .imageRestaurant__note {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  background-color: #99e2d0;
+  color: #4d4d4d;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 article h2 {
   font-size: small;
@@ -195,7 +222,7 @@ article p {
     margin-bottom: 15px;
     font-size: 0.7em;
     height: 45px;
-    background-color: #dad2d2;
+    background-color: #eaeaea;
     width: 30%;
   }
   #Fonctionnement li i {
@@ -214,14 +241,16 @@ article p {
   }
 
   #restaurant {
-    background-color: #eee8e8;
+    background-color: #eaeaea;
     padding-top: 30px;
     padding-bottom: 30px;
+    align-items: center;
+    text-align: center;
   }
 
   article {
     display: inline-block;
-    width: 45%;
+    width: 40%;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 15px;
