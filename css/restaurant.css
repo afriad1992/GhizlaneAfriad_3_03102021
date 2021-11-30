@@ -45,6 +45,11 @@ footer i {
   padding-right: 15px;
 }
 
+a {
+  text-decoration: none;
+  color:white;
+}
+
 header {
   z-index: 0;
 }
