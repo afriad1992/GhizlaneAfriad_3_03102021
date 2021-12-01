@@ -127,7 +127,7 @@ header > img {
   animation-duration: 1500ms;
   height: 100%;
   animation-fill-mode: both;
-  opacity: 1;
+  opacity: 0;
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
 }
@@ -198,60 +198,70 @@ header > img {
 }
 .plat1 {
   animation-name: menu;
+  animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 200ms;
 }
 
 .plat2 {
   animation-name: menu;
+  animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 400ms;
 }
 
 .plat3 {
   animation-name: menu;
+  animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 600ms;
 }
 
 .plat4 {
   animation-name: menu;
+  animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 800ms;
 }
 
 .plat5 {
   animation-name: menu;
+  animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 1000ms;
 }
 
 .plat6 {
   animation-name: menu;
+  animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 1200ms;
 }
 
 .plat7 {
   animation-name: menu;
+  animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 1400ms;
 }
 
 .plat8 {
   animation-name: menu;
+  animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 1600ms;
 }
 
 .plat9 {
   animation-name: menu;
+  animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 1800ms;
 }
 
 .plat10 {
   animation-name: menu;
+  animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 2000ms;
 }
