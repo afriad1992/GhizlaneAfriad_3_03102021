@@ -192,15 +192,15 @@ article h2 {
   padding-left: 20px;
 }
 article h2 i {
-  font-size: large;
+  font-size: 26px;
   padding-left: 120px;
   position: absolute;
-  right: 0;
+  right: 5px;
   top: 0;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 article h2 .far {
-  color: black;
+  color: #737373;
 }
 article h2 .fas {
   opacity: 0;
@@ -294,13 +294,13 @@ article p {
   article h2 i {
     padding-left: 110px;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 0;
-    padding-right: 10px;
-    font-size: large;
+    padding-right: 15px;
+    font-size: 32px;
   }
   article h2 .far {
-    color: black;
+    color: #737373;
   }
   article h2 .fas {
     opacity: 0;
