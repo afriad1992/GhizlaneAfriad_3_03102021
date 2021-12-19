@@ -23,6 +23,9 @@ button {
   box-shadow: 0px 3px 8px 3px gainsboro;
   margin-right: auto;
 }
+button:hover {
+  background: white;
+}
 
 footer {
   position: relative;
@@ -49,10 +52,11 @@ footer i {
 }
 
 h1 {
-  font-weight: bolder;
-  font-size: medium;
+  font-weight: 710;
+  font-size: 1.2em;
   margin-left: 15px;
   margin-bottom: 12px;
+  letter-spacing: -0.5px;
 }
 
 .entete__image {
@@ -80,23 +84,20 @@ h1 {
 }
 
 #choix {
-  background-color: rgba(255, 251, 251, 0.856);
+  background-color: #f6f6f6;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 3px;
 }
 #choix__button {
-  color: white;
-  font-size: 0.6em;
-  padding: 0% 5%;
-  height: 35px;
-  border: none;
-  box-shadow: 0px 3px 8px 3px gainsboro;
-  margin: auto;
+  height: 42px;
+  padding-left: 7%;
+  padding-right: 7%;
+  font-size: 0.8em;
+  font-weight: 530;
 }
 #choix__p {
-  font-size: small;
-  color: #4d4d4d;
+  color: #737373;
 }
 
 #Fonctionnement ol {
@@ -110,12 +111,14 @@ h1 {
   box-shadow: 0px 3px 8px 3px gainsboro;
   border-radius: 16px;
   margin-bottom: 15px;
-  font-size: 0.7em;
+  font-size: 0.8em;
+  font-weight: 580;
   height: 45px;
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
 }
 #Fonctionnement li i {
   margin-right: 15px;
+  color: #6e6e6e;
 }
 #Fonctionnement li:hover {
   background-color: #f5edff;
@@ -138,7 +141,7 @@ h1 {
 }
 
 #restaurant {
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -150,6 +153,7 @@ article {
   border: 1px solid rgba(255, 251, 251, 0.603);
   margin-bottom: 15px;
   background-color: white;
+  padding-bottom: 10px;
 }
 article a {
   text-decoration: none;
@@ -175,16 +179,21 @@ article .imageRestaurant__note {
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+  border-radius: 5px;
+  font-size: 0.7em;
+  font-weight: bolder;
+  color: #737373;
 }
 article h2 {
-  font-size: small;
+  font-size: medium;
   color: black;
   line-height: 0.5em;
   position: relative;
   padding-left: 20px;
 }
 article h2 i {
-  padding-left: 100px;
+  font-size: large;
+  padding-left: 120px;
   position: absolute;
   right: 0;
   top: 0;
@@ -205,7 +214,7 @@ article h2 .fas:hover {
 }
 article p {
   color: gray;
-  font-size: smaller;
+  font-size: medium;
   line-height: 0;
   padding-left: 20px;
 }
@@ -224,13 +233,15 @@ article p {
     box-shadow: 0px 3px 8px 3px gainsboro;
     border-radius: 16px;
     margin-bottom: 15px;
-    font-size: 0.7em;
+    font-size: 0.8em;
+    font-weight: 580;
     height: 45px;
-    background-color: #eaeaea;
+    background-color: #f6f6f6;
     width: 30%;
   }
   #Fonctionnement li i {
     margin-right: 15px;
+    color: #6e6e6e;
   }
   #Fonctionnement li::before {
     counter-increment: li;
@@ -245,7 +256,7 @@ article p {
   }
 
   #restaurant {
-    background-color: #eaeaea;
+    background-color: #f6f6f6;
     padding-top: 30px;
     padding-bottom: 30px;
     align-items: center;
@@ -261,6 +272,7 @@ article p {
     border: 1px solid rgba(255, 251, 251, 0.603);
     margin-bottom: 15px;
     background-color: white;
+    padding-bottom: 10px;
   }
   article a {
     text-decoration: none;
@@ -273,18 +285,19 @@ article p {
     height: 17vw;
   }
   article h2 {
-    font-size: small;
+    font-size: medium;
     color: black;
     line-height: 0.5em;
     position: relative;
     padding-left: 20px;
   }
   article h2 i {
-    padding-left: 100px;
+    padding-left: 110px;
     position: absolute;
     right: 0;
     top: 0;
     padding-right: 10px;
+    font-size: large;
   }
   article h2 .far {
     color: black;
@@ -304,6 +317,7 @@ article p {
     font-size: smaller;
     line-height: 0;
     padding-left: 20px;
+    font-size: medium;
   }
 }
 

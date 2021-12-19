@@ -1,9 +1,10 @@
 @import "../commun/commun.scss";
     h1{
-        font-weight:bolder;
-        font-size:medium;
+        font-weight:710;
+        font-size:1.2em;
         margin-left: 15px;
         margin-bottom: 12px;
+        letter-spacing: -0.5px;
     }
 .entete{ 
     &__image{
@@ -32,22 +33,20 @@
     }
 }
 #choix{
-    background-color:rgba(255, 251, 251, 0.856); 
+    background-color:$body; 
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 3px;
     &__button{
-        color:white;
-        font-size: 0.6em;
-        padding: 0% 5%;
-        height: 35px;
-        border: none;
-        box-shadow: 0px 3px 8px 3px rgb(220, 220, 220); 
-        margin: auto; 
+        height: 42px;
+        padding-left: 7%;
+        padding-right: 7%;
+        font-size: 0.8em;
+        font-weight: 530;
     }    
     &__p{
-        font-size: small;
-        color:rgb(77,77,77);
+        
+        color:rgb(115,115,115);
     }
 }
 
@@ -64,13 +63,15 @@
         // margin:auto 0px;
         border-radius: 16px;
         margin-bottom: 15px;
-        font-size: 0.7em;
+        font-size: 0.8em;
+        font-weight: 580;
         // align-items: center;
         height: 45px;
         // padding-top: 3%;
-        background-color:$header;     
+        background-color:$body;     
         i{
             margin-right: 15px;
+            color: rgb(110,110, 110);
         };
     };
     li:hover{
@@ -93,7 +94,7 @@
     };
 } 
 #restaurant{
-    background-color:$header; 
+    background-color:$body; 
     padding-top:30px;
     padding-bottom: 30px;
 }
@@ -104,6 +105,7 @@ article{
     border: 1px solid rgba(255, 251, 251, 0.603) ;
     margin-bottom: 15px;
     background-color: white;
+    padding-bottom: 10px;
     a{
         text-decoration: none;
         border-radius: 15px;
@@ -127,18 +129,23 @@ article{
             padding-right: 15px;
             padding-top: 5px;
             padding-bottom: 5px;
+            border-radius: 5px;
+            font-size: 0.7em;
+            font-weight: bolder;
+            color:rgb(115,115,115)
 
         }
     }
    
     h2{
-        font-size: small;
+        font-size: medium;
         color: black;
         line-height:0.5em;
         position:relative;
         padding-left: 20px;
-        i{       
-        padding-left:100px;
+        i{ 
+        font-size: large;          
+        padding-left:120px;
         position: absolute;
         right:0;
         top:0;
@@ -167,7 +174,7 @@ article{
     }
     p{
         color: gray;
-        font-size: smaller;
+        font-size: medium;
         line-height:0 ;
         padding-left: 20px;
     };
@@ -189,14 +196,16 @@ article{
             // margin:auto 0px;
             border-radius: 16px;
             margin-bottom: 15px;
-            font-size: 0.7em;
+            font-size: 0.8em;
+            font-weight: 580;
             // align-items: center;
             height: 45px;
             // padding-top: 3%;
-            background-color:$header;
+            background-color:$body;
             width: 30%;          
             i{
                 margin-right: 15px;
+                color: rgb(110,110, 110)
             };
         }
         li::before {
@@ -211,7 +220,7 @@ article{
         };
     } 
     #restaurant{
-        background-color:$header; 
+        background-color:$body; 
         padding-top:30px;
         padding-bottom: 30px;
         align-items: center;
@@ -225,7 +234,8 @@ article{
         border-radius: 15px;
         border: 1px solid rgba(255, 251, 251, 0.603) ;
         margin-bottom: 15px;
-        background-color: white;      
+        background-color: white; 
+        padding-bottom: 10px;     
         a{
             text-decoration: none;
             border-radius: 15px;
@@ -237,17 +247,18 @@ article{
             height: 17vw;
         }
         h2{
-            font-size: small;
+            font-size: medium;
             color: black;
             line-height:0.5em;
             position:relative;
             padding-left: 20px;
             i{  
-                padding-left:100px;
+                padding-left:110px;
                 position: absolute;
                 right:0;
                 top:0;
-                padding-right: 10px;   
+                padding-right: 10px; 
+                font-size: large;  
             }
             // i:hover{opacity:1;}
             .far{
@@ -278,6 +289,7 @@ article{
             font-size: smaller;
             line-height:0 ;
             padding-left: 20px;
+            font-size: medium;
         };
 }   
 

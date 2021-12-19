@@ -24,6 +24,9 @@ button {
   box-shadow: 0px 3px 8px 3px gainsboro;
   margin-right: auto;
 }
+button:hover {
+  background: white;
+}
 
 footer {
   position: relative;
@@ -78,7 +81,7 @@ header > img {
   padding: 1% 7%;
   background-color: #f6f6f6;
   border-radius: 20px;
-  margin-bottom: 32px;
+  margin-bottom: -5px;
   margin-top: -17vw;
   z-index: 1;
 }
@@ -90,6 +93,13 @@ header > img {
 #menuR h1 i {
   position: absolute;
   right: 0;
+}
+#menuR button {
+  height: 42px;
+  padding-left: 7%;
+  padding-right: 7%;
+  font-size: 0.8em;
+  font-weight: 530;
 }
 #menuR__entrée h2, #menuR__Plats h2, #menuR__Desserts h2 {
   font-weight: lighter;
@@ -103,9 +113,9 @@ header > img {
   background-color: #99e2d0;
 }
 #menuR__entrée article, #menuR__Plats article, #menuR__Desserts article {
-  font-size: small;
+  font-size: medium;
   background-color: white;
-  border-radius: 22px;
+  border-radius: 12px;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
@@ -126,9 +136,9 @@ header > img {
   animation-duration: 1500ms;
   height: 100%;
   animation-fill-mode: both;
-  opacity: 0;
-  border-top-right-radius: 22px;
-  border-bottom-right-radius: 22px;
+  opacity: 1;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 #menuR__entrée article > div:first-child:hover + div i, #menuR__Plats article > div:first-child:hover + div i, #menuR__Desserts article > div:first-child:hover + div i {
   margin: auto;
@@ -144,7 +154,7 @@ header > img {
   font-weight: bold;
   padding-bottom: 0;
   margin-bottom: 0;
-  margin-top: 0px;
+  margin-top: 3px;
   font-size: 1em;
 }
 #menuR__entrée article > div:first-child div, #menuR__Plats article > div:first-child div, #menuR__Desserts article > div:first-child div {
@@ -154,6 +164,7 @@ header > img {
   align-items: center;
   justify-content: space-between;
   font-size: 0.8em;
+  height: 20px;
 }
 #menuR__entrée article > div:first-child div span, #menuR__Plats article > div:first-child div span, #menuR__Desserts article > div:first-child div span {
   text-align: center;
@@ -161,6 +172,8 @@ header > img {
   vertical-align: sub;
 }
 #menuR__entrée article > div:last-child, #menuR__Plats article > div:last-child, #menuR__Desserts article > div:last-child {
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
   opacity: 0;
   height: 100%;
   display: flex;
@@ -281,7 +294,7 @@ header > img {
     padding: 1% 7%;
     background-color: #f6f6f6;
     border-radius: 20px;
-    margin-bottom: 32px;
+    margin-bottom: -5px;
     margin-top: -17vw;
     z-index: 1;
   }
@@ -313,9 +326,9 @@ header > img {
     background-color: #99e2d0;
   }
   #menuR__entrée article, #menuR__Plats article, #menuR__Desserts article {
-    font-size: small;
+    font-size: medium;
     background-color: white;
-    border-radius: 22px;
+    border-radius: 12px;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
@@ -332,13 +345,13 @@ header > img {
     width: 150px;
   }
   #menuR__entrée article > div:first-child:hover + div, #menuR__Plats article > div:first-child:hover + div, #menuR__Desserts article > div:first-child:hover + div {
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
     animation-name: trans;
     animation-duration: 1500ms;
     height: 100%;
     animation-fill-mode: both;
     opacity: 1;
-    border-top-right-radius: 22px;
-    border-bottom-right-radius: 22px;
   }
   #menuR__entrée article > div:first-child:hover + div i, #menuR__Plats article > div:first-child:hover + div i, #menuR__Desserts article > div:first-child:hover + div i {
     margin: auto;
@@ -356,6 +369,7 @@ header > img {
     margin-bottom: 0;
     margin-top: 0px;
     font-size: 1em;
+    margin-top: 4px;
   }
   #menuR__entrée article > div:first-child div, #menuR__Plats article > div:first-child div, #menuR__Desserts article > div:first-child div {
     padding-top: 0;
@@ -364,6 +378,7 @@ header > img {
     align-items: center;
     justify-content: space-between;
     font-size: 0.8em;
+    margin-top: 3px;
   }
   #menuR__entrée article > div:first-child div span, #menuR__Plats article > div:first-child div span, #menuR__Desserts article > div:first-child div span {
     text-align: center;
@@ -371,6 +386,8 @@ header > img {
     vertical-align: sub;
   }
   #menuR__entrée article > div:last-child, #menuR__Plats article > div:last-child, #menuR__Desserts article > div:last-child {
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
     opacity: 0;
     height: 100%;
     width: 0%;

@@ -30,7 +30,7 @@ header{
     padding: 1% 7%;
     background-color: rgb(246, 246, 246);
     border-radius: 20px;
-    margin-bottom: 32px;
+    margin-bottom: -5px;
     margin-top: -17vw;
     z-index: 1;
     h1{
@@ -42,6 +42,14 @@ header{
             right:0;
         }
     }
+    button{ 
+        height: 42px;
+        padding-left: 7%;
+        padding-right: 7%;
+        font-size: 0.8em;
+        font-weight: 530;
+
+    };
     &__entrée,&__Plats,&__Desserts{      
         h2{
             font-weight: lighter;
@@ -55,9 +63,9 @@ header{
             }
         }
         article{    
-            font-size: small;
+            font-size: medium;
             background-color: white;
-            border-radius: 22px;
+            border-radius: 12px;
             margin-bottom: 10px;
             display: flex;
             justify-content: space-between;
@@ -87,15 +95,15 @@ header{
                     height: 100%;
                     animation-fill-mode: both;
                     
-                    opacity: 0;
-                    border-top-right-radius:22px ;
-                    border-bottom-right-radius: 22px;
+                    opacity: 1;
+                    border-top-right-radius:12px ;
+                    border-bottom-right-radius: 12px;
                 }      
                 h3{
                     font-weight: bold;
                     padding-bottom: 0; 
                     margin-bottom: 0; 
-                    margin-top: 0px;
+                    margin-top: 3px;
                     font-size: 1em;                   
                 }   
                 div{
@@ -104,7 +112,8 @@ header{
                     display: flex;                   
                     align-items: center;
                     justify-content: space-between;
-                    font-size: 0.8em;                 
+                    font-size: 0.8em; 
+                    height: 20px;                
                     span{
                         text-align: center;
                         font-weight: bolder;
@@ -113,6 +122,8 @@ header{
                 } 
            }
             >div:last-child{
+                border-bottom-right-radius: 12px;
+                border-top-right-radius: 12px;
                 opacity: 0;
                 height: 100%;  
                 display:flex;
@@ -172,7 +183,7 @@ header{
         padding: 1% 7%;
         background-color: rgb(246, 246, 246);
         border-radius: 20px;
-        margin-bottom: 32px;
+        margin-bottom: -5px;
         margin-top: -17vw;
         z-index: 1;
         h1{
@@ -202,9 +213,9 @@ header{
                 }
             }
             article{          
-                font-size: small;
+                font-size: medium;
                 background-color: white;
-                border-radius: 22px;
+                border-radius: 12px;
                 margin-bottom: 10px;
                 display: flex;
                 justify-content: space-between;
@@ -228,22 +239,25 @@ header{
                         animation-duration: 1600ms;
                         animation-fill-mode: both;
                         width: 15%;
+                        
                         }
+                        border-bottom-right-radius: 12px;
+                        border-top-right-radius: 12px;
                         animation-name: trans;
                         animation-duration: 1500ms;
                         height: 100%;
                         animation-fill-mode: both;
                     
                         opacity: 1;
-                        border-top-right-radius:22px ;
-                        border-bottom-right-radius: 22px;
+                        
                     }      
                     h3{
                         font-weight: bold;
                         padding-bottom: 0; 
                         margin-bottom: 0; 
                         margin-top: 0px;
-                        font-size: 1em;                   
+                        font-size: 1em;  
+                        margin-top: 4px;                 
                     }   
                     div{
                         padding-top: 0;
@@ -251,7 +265,8 @@ header{
                         display: flex;                
                         align-items: center;
                         justify-content: space-between;
-                        font-size: 0.8em;               
+                        font-size: 0.8em; 
+                        margin-top: 3px;              
                         span{
                             text-align: center;
                             font-weight: bolder;
@@ -260,6 +275,8 @@ header{
                     }
                 }
                 >div:last-child{
+                    border-bottom-right-radius: 12px;
+                    border-top-right-radius: 12px;
                     opacity: 0;
                     height: 100%;
                     width: 0%; 
